@@ -8,6 +8,7 @@ declare global {
         FHIR_SERVER_R2     : string
         FHIR_SERVER_R3     : string
         FHIR_SERVER_R4     : string
+        MEDPLUM_SERVER_URL : string
         ACCESS_TOKEN       : string
         VERSION            : string
         COMMIT             : string
