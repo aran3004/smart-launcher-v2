@@ -2,6 +2,12 @@
   "resourceType": "Bundle",
   "type": "searchset",
   "total": 18,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:8445/csv-fhir/Patient"
+    }
+  ],
   "entry": [
     {
       "fullUrl": "http://localhost:8445/csv-fhir/Patient/patient-1001",
