@@ -23,6 +23,15 @@ mv example.env .env
 Then read the comments above each environment variable and decide what you would
 like to change.
 
+### CSV Patient Data (Default)
+By default, the launcher uses a local CSV-based FHIR server that provides static patient data with MPI identifiers. This includes 16 test patients (John Doe, Jane Smith, Alice Johnson, etc.) that are served from `test/mocks/csv-patients-bundle.json`. The CSV server runs automatically when you start the backend and is accessible at `http://localhost:8445/csv-fhir`.
+
+To use external FHIR servers instead, modify the `FHIR_SERVER_R4` setting in your `.env` file:
+```sh
+# For external FHIR server (alternative to CSV data):
+FHIR_SERVER_R4 = "https://r4.smarthealthit.org"
+```
+
 NOTE: The `.env` file is included in `.gitignore` and cannot be pushed with git.
 If you want to deploy this to remote server, you will have to create another
 `.env` file on the server, or set those environment variables in some other way.
