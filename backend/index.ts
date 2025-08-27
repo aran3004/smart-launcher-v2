@@ -10,6 +10,7 @@ import fhirServer      from "./routes/fhir"
 import authServer      from "./routes/auth"
 import launcher        from "./routes/launcher"
 import launcherRemote  from "./routes/launcherRemote"
+import csvFhirServer   from "./routes/csv-fhir-server"
 import pkg             from "../package.json"
 import { globalErrorHandler, ipBlackList } from "./middlewares"
 
@@ -58,6 +59,8 @@ app.use([
 // The launcher endpoint
 app.get("/launcher", launcher);
 app.get("/remote-launch", launcherRemote);
+
+app.use("/csv-fhir", csvFhirServer);
 
 // Host public keys for backend services JWKS auth
 app.get("/keys", async (_, res) => {

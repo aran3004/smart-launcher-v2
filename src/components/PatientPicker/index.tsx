@@ -71,7 +71,7 @@ export default function PatientPicker() {
     
     const [state, dispatch] = useReducer(reducer, {
         ...initialState,
-        baseUrl: searchParams.get("aud") + "/Patient", // || window.location.href.split("?")[0].replace(/\/select-patient$/, "/fhir"),
+        baseUrl: searchParams.get("aud") ? searchParams.get("aud") + "/Patient" : window.ENV.FHIR_SERVER_R4 + "/Patient",
         patient: (searchParams.get("patient") || "").split(/\s*,\s*/).map(s => s.trim()).join(",")
     });
 
@@ -88,7 +88,11 @@ export default function PatientPicker() {
     const url = new URL(baseUrl)
     
     if (searchText) {
-        url.searchParams.set("name:contains", searchText);
+        if (/^\d+$/.test(searchText)) {
+            url.searchParams.set("identifier", searchText);
+        } else {
+            url.searchParams.set("name:contains", searchText);
+        }
     }
     
     url.searchParams.set("_format" , "json")
