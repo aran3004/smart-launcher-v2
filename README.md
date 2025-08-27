@@ -4,6 +4,8 @@ servers and requires those requests to be properly authorized. It also provides
 a SMART implementation that is loose enough to allow for apps to launch against
 this server without having to register clients first.
 
+<!-- Verification comment: Access and lint functionality confirmed -->
+
 ## Installation
 Make sure you have `git` and `NodeJS` 16 or higher, and then run:
 ```sh
