@@ -116,7 +116,8 @@ export default function Launcher() {
         jwks_url     : launch.jwks_url,
         jwks         : launch.jwks,
         client_type  : launch.client_type,
-        pkce         : launch.pkce
+        pkce         : launch.pkce,
+        fhir_server  : launch.fhir_server || (window.ENV?.MEDPLUM_SERVER_URL || "")
     })
 
     const isStandaloneLaunch = launch_type.includes("standalone");

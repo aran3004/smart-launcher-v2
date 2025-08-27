@@ -37,6 +37,13 @@ export default {
     fhirServerR4: env.FHIR_SERVER_R4 ?? "https://r4.smarthealthit.org",
     
     /**
+     * Medplum FHIR server configuration
+     */
+    medplumServerUrl: env.MEDPLUM_SERVER_URL || "",
+    medplumClientId: env.MEDPLUM_CLIENT_ID || "",
+    medplumClientSecret: env.MEDPLUM_CLIENT_SECRET || "",
+    
+    /**
      * Default access token lifetime in minutes
      */
     accessTokenLifetime: env.ACCESS_TOKEN_LIFETIME || 60,

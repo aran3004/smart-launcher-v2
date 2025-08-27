@@ -1,6 +1,7 @@
 import { Request, Response } from "express"
 import { fetch, Headers }    from "cross-fetch"
 import { getRequestBaseURL, getFhirServerBaseUrl, validateToken } from "../../lib"
+import { getMedplumAuthHeader, isMedplumServer } from "../../lib/medplum-auth"
 
 
 export default async function proxy(req: Request, res: Response) {
@@ -34,6 +35,14 @@ export default async function proxy(req: Request, res: Response) {
     for (const name in req.headers) {
         if (!name.match(/^x-/i) && !headersToIgnore.includes(name)) {
             fhirRequestOptions.headers.set(name, req.headers[name] + "")
+        }
+    }
+    
+    if (isMedplumServer(fhirServer)) {
+        try {
+            fhirRequestOptions.headers.set("authorization", getMedplumAuthHeader());
+        } catch (error) {
+            console.warn("Medplum authentication not configured:", (error as Error).message);
         }
     }
     
