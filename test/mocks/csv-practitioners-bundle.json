@@ -10,273 +10,172 @@
   ],
   "entry": [
     {
-      "fullUrl": "http://localhost:8445/csv-fhir/Practitioner/practitioner-1001",
+      "fullUrl": "http://localhost:8445/csv-fhir/Practitioner/0198e815-6347-7703-8de0-0d30628e6779",
       "resource": {
-        "resourceType": "Practitioner",
-        "id": "practitioner-1001",
         "identifier": [
           {
-            "use": "usual",
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "NPI",
-                  "display": "National Provider Identifier"
-                }
-              ]
-            },
-            "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "1234567890"
+            "system": "http://panels.awellhealth.com/fhir/identifier/practitioner",
+            "value": "member-live-7341cdcd-549a-4470-ac97-e71ee03a7602"
           }
         ],
+        "resourceType": "Practitioner",
         "name": [
           {
-            "use": "official",
-            "family": "Smith",
             "given": [
-              "Dr. Sarah"
-            ],
-            "prefix": [
-              "Dr."
+              "Thomas Vande Casteele"
             ]
           }
         ],
-        "telecom": [
-          {
-            "system": "email",
-            "value": "sarah.smith@example.com"
-          }
-        ],
-        "qualification": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
-                  "code": "MD",
-                  "display": "Doctor of Medicine"
-                }
-              ]
+        "id": "0198e815-6347-7703-8de0-0d30628e6779",
+        "meta": {
+          "versionId": "0198e815-6347-7703-8de0-11b3e7ad37c6",
+          "lastUpdated": "2025-08-26T20:32:52.551Z",
+          "author": {
+            "reference": "ClientApplication/0198e5a1-18f1-750a-974b-29d903c32457",
+            "display": "DaVita Default Client"
+          },
+          "project": "0198e59a-318f-7208-ac31-1a9bb954e074",
+          "compartment": [
+            {
+              "reference": "Project/0198e59a-318f-7208-ac31-1a9bb954e074"
             }
-          }
-        ]
+          ]
+        }
       }
     },
     {
-      "fullUrl": "http://localhost:8445/csv-fhir/Practitioner/practitioner-1002",
+      "fullUrl": "http://localhost:8445/csv-fhir/Practitioner/0198e815-6344-77eb-8ef4-35332672e206",
       "resource": {
-        "resourceType": "Practitioner",
-        "id": "practitioner-1002",
         "identifier": [
           {
-            "use": "usual",
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "NPI",
-                  "display": "National Provider Identifier"
-                }
-              ]
-            },
-            "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "1234567891"
+            "system": "http://panels.awellhealth.com/fhir/identifier/practitioner",
+            "value": "member-live-7341cdcd-549a-4470-ac97-e71ee03a7602"
           }
         ],
+        "resourceType": "Practitioner",
         "name": [
           {
-            "use": "official",
-            "family": "Johnson",
             "given": [
-              "Dr. Michael"
-            ],
-            "prefix": [
-              "Dr."
+              "Thomas Vande Casteele"
             ]
           }
         ],
-        "telecom": [
-          {
-            "system": "email",
-            "value": "michael.johnson@example.com"
-          }
-        ],
-        "qualification": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
-                  "code": "MD",
-                  "display": "Doctor of Medicine"
-                }
-              ]
+        "id": "0198e815-6344-77eb-8ef4-35332672e206",
+        "meta": {
+          "versionId": "0198e815-6344-77eb-8ef4-38abd8dcfa90",
+          "lastUpdated": "2025-08-26T20:32:52.548Z",
+          "author": {
+            "reference": "ClientApplication/0198e5a1-18f1-750a-974b-29d903c32457",
+            "display": "DaVita Default Client"
+          },
+          "project": "0198e59a-318f-7208-ac31-1a9bb954e074",
+          "compartment": [
+            {
+              "reference": "Project/0198e59a-318f-7208-ac31-1a9bb954e074"
             }
-          }
-        ]
+          ]
+        }
       }
     },
     {
-      "fullUrl": "http://localhost:8445/csv-fhir/Practitioner/practitioner-1003",
+      "fullUrl": "http://localhost:8445/csv-fhir/Practitioner/0198e5c6-44af-7542-b662-d23767307674",
       "resource": {
-        "resourceType": "Practitioner",
-        "id": "practitioner-1003",
         "identifier": [
           {
-            "use": "usual",
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "NPI",
-                  "display": "National Provider Identifier"
-                }
-              ]
-            },
-            "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "1234567892"
+            "system": "http://panels.awellhealth.com/fhir/identifier/practitioner",
+            "value": "member-live-7cd4c232-b012-40d5-8d07-7b5f218f76c3"
           }
         ],
+        "resourceType": "Practitioner",
         "name": [
           {
-            "use": "official",
-            "family": "Williams",
             "given": [
-              "Dr. Emily"
-            ],
-            "prefix": [
-              "Dr."
+              "Aran Mahal"
             ]
           }
         ],
-        "telecom": [
-          {
-            "system": "email",
-            "value": "emily.williams@example.com"
-          }
-        ],
-        "qualification": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
-                  "code": "RN",
-                  "display": "Registered Nurse"
-                }
-              ]
+        "id": "0198e5c6-44af-7542-b662-d23767307674",
+        "meta": {
+          "versionId": "0198e5c6-44af-7542-b662-d74d5a770e82",
+          "lastUpdated": "2025-08-26T09:47:12.943Z",
+          "author": {
+            "reference": "ClientApplication/0198e5a1-18f1-750a-974b-29d903c32457",
+            "display": "DaVita Default Client"
+          },
+          "project": "0198e59a-318f-7208-ac31-1a9bb954e074",
+          "compartment": [
+            {
+              "reference": "Project/0198e59a-318f-7208-ac31-1a9bb954e074"
             }
-          }
-        ]
+          ]
+        }
       }
     },
     {
-      "fullUrl": "http://localhost:8445/csv-fhir/Practitioner/practitioner-1004",
+      "fullUrl": "http://localhost:8445/csv-fhir/Practitioner/0198e5af-7044-703e-9dac-1c289ed6db87",
       "resource": {
-        "resourceType": "Practitioner",
-        "id": "practitioner-1004",
         "identifier": [
           {
-            "use": "usual",
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "NPI",
-                  "display": "National Provider Identifier"
-                }
-              ]
-            },
-            "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "1234567893"
+            "system": "http://panels.awellhealth.com/fhir/identifier/practitioner",
+            "value": "member-live-819daaca-c8cf-475b-9349-90e41529e53a"
           }
         ],
+        "resourceType": "Practitioner",
         "name": [
           {
-            "use": "official",
-            "family": "Brown",
             "given": [
-              "Dr. David"
-            ],
-            "prefix": [
-              "Dr."
+              "Flavio Ferreira"
             ]
           }
         ],
-        "telecom": [
-          {
-            "system": "email",
-            "value": "david.brown@example.com"
-          }
-        ],
-        "qualification": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
-                  "code": "MD",
-                  "display": "Doctor of Medicine"
-                }
-              ]
+        "id": "0198e5af-7044-703e-9dac-1c289ed6db87",
+        "meta": {
+          "versionId": "0198e5af-7044-703e-9dac-2055149479dd",
+          "lastUpdated": "2025-08-26T09:22:16.772Z",
+          "author": {
+            "reference": "ClientApplication/0198e5a1-18f1-750a-974b-29d903c32457",
+            "display": "DaVita Default Client"
+          },
+          "project": "0198e59a-318f-7208-ac31-1a9bb954e074",
+          "compartment": [
+            {
+              "reference": "Project/0198e59a-318f-7208-ac31-1a9bb954e074"
             }
-          }
-        ]
+          ]
+        }
       }
     },
     {
-      "fullUrl": "http://localhost:8445/csv-fhir/Practitioner/practitioner-1005",
+      "fullUrl": "http://localhost:8445/csv-fhir/Practitioner/0198f103-735c-762e-bf1f-00a0ed5d9756",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "practitioner-1005",
-        "identifier": [
-          {
-            "use": "usual",
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "NPI",
-                  "display": "National Provider Identifier"
-                }
-              ]
-            },
-            "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "1234567894"
-          }
-        ],
         "name": [
           {
-            "use": "official",
-            "family": "Davis",
-            "given": [
-              "Dr. Lisa"
-            ],
             "prefix": [
-              "Dr."
-            ]
+              "Dr"
+            ],
+            "given": [
+              "Evelyn"
+            ],
+            "family": "Carter"
           }
         ],
-        "telecom": [
-          {
-            "system": "email",
-            "value": "lisa.davis@example.com"
-          }
-        ],
-        "qualification": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
-                  "code": "PA",
-                  "display": "Physician Assistant"
-                }
-              ]
+        "gender": "female",
+        "id": "0198f103-735c-762e-bf1f-00a0ed5d9756",
+        "meta": {
+          "versionId": "0198f103-735c-762e-bf1f-0725b4aaf53f",
+          "lastUpdated": "2025-08-28T14:09:51.964Z",
+          "author": {
+            "reference": "Practitioner/0198e595-eeb4-74f5-8595-bc5dcbfe4838",
+            "display": "DaVita Medplum"
+          },
+          "project": "0198e59a-318f-7208-ac31-1a9bb954e074",
+          "compartment": [
+            {
+              "reference": "Project/0198e59a-318f-7208-ac31-1a9bb954e074"
             }
-          }
-        ]
+          ]
+        }
       }
     }
   ]
